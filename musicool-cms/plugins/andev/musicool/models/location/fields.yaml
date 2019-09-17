@@ -1,0 +1,9 @@
+fields:
+    nama:
+        label: 'Nama Lokasi'
+        span: full
+        type: text
+    alamat:
+        label: Alamat
+        span: full
+        type: text

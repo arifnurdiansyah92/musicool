@@ -1,0 +1,71 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table andev_musicool_banner'
+    - builder_table_create_andev_musicool_banner.php
+1.0.3:
+    - 'Updated table andev_musicool_banner'
+    - builder_table_update_andev_musicool_banner.php
+1.0.4:
+    - 'Created table andev_musicool_info'
+    - builder_table_create_andev_musicool_info.php
+1.0.5:
+    - 'Updated table andev_musicool_info'
+    - builder_table_update_andev_musicool_info.php
+1.0.6:
+    - 'Created table andev_musicool_features'
+    - builder_table_create_andev_musicool_features.php
+1.0.7:
+    - 'Created table andev_musicool_contact'
+    - builder_table_create_andev_musicool_contact.php
+1.0.8:
+    - 'Created table andev_musicool_about'
+    - builder_table_create_andev_musicool_about.php
+1.0.9:
+    - 'Updated table andev_musicool_info'
+    - builder_table_update_andev_musicool_info_2.php
+1.0.10:
+    - 'Created table andev_musicool_subscribers'
+    - builder_table_create_andev_musicool_subscribers.php
+1.0.11:
+    - 'Drop table andev_musicool_banners'
+    - builder_table_delete_andev_musicool_banners.php
+1.0.12:
+    - 'Created table andev_musicool_email'
+    - builder_table_create_andev_musicool_email.php
+1.0.13:
+    - 'Created table andev_musicool_phone'
+    - builder_table_create_andev_musicool_phone.php
+1.0.14:
+    - 'Updated table andev_musicool_contact'
+    - builder_table_update_andev_musicool_contact.php
+1.0.15:
+    - 'Created table andev_musicool_location'
+    - builder_table_create_andev_musicool_location.php
+1.0.16:
+    - 'Updated table andev_musicool_location'
+    - builder_table_update_andev_musicool_location.php
+1.0.17:
+    - 'Created table andev_musicool_category_gallery'
+    - builder_table_create_andev_musicool_category_gallery.php
+1.0.18:
+    - 'Created table andev_musicool_email_setting'
+    - builder_table_create_andev_musicool_email_setting.php
+1.0.19:
+    - 'Created table andev_musicool_provinsi'
+    - builder_table_create_andev_musicool_provinsi.php
+1.0.20:
+    - 'Created table andev_musicool_kota'
+    - builder_table_create_andev_musicool_kota.php
+1.0.21:
+    - 'Created table andev_musicool_kecamatan'
+    - builder_table_create_andev_musicool_kecamatan.php
+1.0.22:
+    - 'Created table andev_musicool_mor'
+    - builder_table_create_andev_musicool_mor.php
+1.0.23:
+    - 'Updated table andev_musicool_jaringan_kami'
+    - builder_table_update_andev_musicool_jaringan_kami.php
+1.0.24:
+    - 'Updated table andev_musicool_jaringan_kami'
+    - builder_table_update_andev_musicool_jaringan_kami_2.php

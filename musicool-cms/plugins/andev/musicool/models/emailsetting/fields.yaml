@@ -1,0 +1,16 @@
+fields:
+    sender_email:
+        label: 'Sender Email'
+        span: auto
+        placeholder: youremail@domain.com
+        type: text
+    sender_password:
+        label: 'Sender Password'
+        span: auto
+        placeholder: Password
+        type: password
+    forward_to:
+        label: 'Forward To'
+        span: auto
+        placeholder: email@yourdomain.com
+        type: text

@@ -1,0 +1,10 @@
+name: JaringanKami
+form: $/andev/musicool/models/jaringankami/fields.yaml
+modelClass: Andev\Musicool\Models\JaringanKami
+defaultRedirect: andev/musicool/jaringankami
+create:
+    redirect: 'andev/musicool/jaringankami/update/:id'
+    redirectClose: andev/musicool/jaringankami
+update:
+    redirect: andev/musicool/jaringankami
+    redirectClose: andev/musicool/jaringankami

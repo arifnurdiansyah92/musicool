@@ -1,0 +1,43 @@
+{% set posts = __SELF__.posts %}
+
+<div class="blist">
+    {% for post in posts %}
+    <div class="blog-item" style="position:relative">
+        {% if post.featured_images.count %}
+        {% for image in post.featured_images|slice(0, 1) %}
+        <div class="date-wrapper">
+            <h5 class="date-day">{{ post.published_at|date('d') }}</h5>
+            <h6 class="date-month">{{ post.published_at|date('M') }}</h6>
+        </div>
+        <img src="{{ image.path }}" class="img-responsive">
+        {% endfor %}
+        {% endif %}
+        <p class=""></p>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.summary|raw }}</p>
+        <a href="{{ post.url }}" class="btn btn-success-outline">Read more</a>
+    </div>
+    {% else %}
+    <li class="no-data">{{ __SELF__.noPostsMessage }}</li>
+    {% endfor %}
+</div>
+
+{% if posts.lastPage > 1 %}
+<ul class="pagination">
+    {% if posts.currentPage > 1 %}
+    <li><a href="{{ this.page.baseFileName|page({ (__SELF__.pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a>
+    </li>
+    {% endif %}
+
+    {% for page in 1..posts.lastPage %}
+    <li class="{{ posts.currentPage == page ? 'active' : null }}">
+        <a href="{{ this.page.baseFileName|page({ (__SELF__.pageParam): page }) }}">{{ page }}</a>
+    </li>
+    {% endfor %}
+
+    {% if posts.lastPage > posts.currentPage %}
+    <li><a href="{{ this.page.baseFileName|page({ (__SELF__.pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

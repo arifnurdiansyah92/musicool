@@ -1,0 +1,14 @@
+columns:
+    id:
+        label: id
+        type: text
+        invisible: true
+    category_gallery_id:
+        label: Category
+        relation: category_gallery
+        select: name
+    _image_path:
+        label: Image
+        sortable: false
+        type: partial
+        path: ~/plugins/andev/musicool/models/gallery/_image_partial.htm

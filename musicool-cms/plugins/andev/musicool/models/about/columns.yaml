@@ -1,0 +1,10 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: false
+        invisible: true
+    about:
+        label: 'About Us'
+        type: 'partial'
+        path: '~/plugins/andev/musicool/models/about/_about.htm'

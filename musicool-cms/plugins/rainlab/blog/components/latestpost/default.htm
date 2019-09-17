@@ -1,0 +1,5 @@
+<ul class="list-unstyled">
+{% for post in __SELF__.latest_posts %}
+    <li><a href="{{ url(post.url) }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

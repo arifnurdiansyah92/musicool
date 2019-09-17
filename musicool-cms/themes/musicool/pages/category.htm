@@ -1,0 +1,60 @@
+title = "Blog Category"
+url = "/blog/category/:slug/:page?"
+layout = "layout"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "category"
+postPage = "post-page"
+
+[blogLatestPosts]
+postUrl = "/blog/post"
+limit = 5
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "category"
+==
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the category name
+    if ($this->category)
+        $this->page->title = $this->category->name;
+}
+?>
+==
+<a id="top"></a>
+  <section id="title-page" class="bg-green" style="margin-top: 75px">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="text-white text-center">{{ category.name }}</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog-ls" class="page-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+            {% component 'blogPosts' %}
+        </div>
+
+        <div class="col-sm-3 sidebar">
+          <h5>Categories</h5>
+          {% component 'blogCategories' %}
+
+          <h5>Lastest Post</h5>
+          {% component 'blogLatestPosts' %}
+        </div>
+      </div>
+
+    </div>
+  </section>

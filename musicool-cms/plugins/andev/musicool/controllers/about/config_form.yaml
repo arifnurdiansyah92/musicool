@@ -1,0 +1,10 @@
+name: About
+form: $/andev/musicool/models/about/fields.yaml
+modelClass: Andev\Musicool\Models\About
+defaultRedirect: andev/musicool/about
+create:
+    redirect: 'andev/musicool/about/update/:id'
+    redirectClose: andev/musicool/about
+update:
+    redirect: andev/musicool/about
+    redirectClose: andev/musicool/about

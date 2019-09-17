@@ -1,0 +1,22 @@
+fields:
+    banner_image:
+        label: Banner
+        mode: file
+        useCaption: true
+        thumbOptions:
+            thumbOptions: null
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+        span: full
+        required: 1
+        type: fileupload
+    is_main:
+        label: 'Main Banner'
+        span: auto
+        type: checkbox

@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: id
+        type: text
+        invisible: true
+    phone_number:
+        label: 'Phone Number'
+        type: text
+    is_main:
+        label: 'Is Main'
+        type: switch

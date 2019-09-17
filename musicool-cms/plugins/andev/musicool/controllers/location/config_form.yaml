@@ -1,0 +1,10 @@
+name: Location
+form: $/andev/musicool/models/location/fields.yaml
+modelClass: Andev\Musicool\Models\Location
+defaultRedirect: andev/musicool/location
+create:
+    redirect: 'andev/musicool/location/update/:id'
+    redirectClose: andev/musicool/location
+update:
+    redirect: andev/musicool/location
+    redirectClose: andev/musicool/location

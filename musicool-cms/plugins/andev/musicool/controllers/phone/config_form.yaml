@@ -1,0 +1,10 @@
+name: Phone
+form: $/andev/musicool/models/phone/fields.yaml
+modelClass: Andev\Musicool\Models\Phone
+defaultRedirect: andev/musicool/phone
+create:
+    redirect: 'andev/musicool/phone/update/:id'
+    redirectClose: andev/musicool/phone
+update:
+    redirect: andev/musicool/phone
+    redirectClose: andev/musicool/phone

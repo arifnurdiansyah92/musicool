@@ -1,0 +1,10 @@
+name: EmailSetting
+form: $/andev/musicool/models/emailsetting/fields.yaml
+modelClass: Andev\Musicool\Models\EmailSetting
+defaultRedirect: andev/musicool/emailsetting
+create:
+    redirect: 'andev/musicool/emailsetting/update/:id'
+    redirectClose: andev/musicool/emailsetting
+update:
+    redirect: andev/musicool/emailsetting
+    redirectClose: andev/musicool/emailsetting

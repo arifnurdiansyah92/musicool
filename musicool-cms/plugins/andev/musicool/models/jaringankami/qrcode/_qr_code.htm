@@ -1,0 +1,17 @@
+<script src="<?= url('plugins/andev/musicool/models/jaringankami/assets/js/qr.min.js') ?>"></script>
+
+<a id="show-qrcode" href="#" onclick="event.stopPropagation(); $('#qrcode').modal('show')" class="btn btn-primary" data-toggle="modal" data-target="#qrcode">QR Code</a>
+<!-- Modal -->
+<script>
+    qr.canvas({
+        canvas: document.getElementById('qr-code'),
+        level: "Q",
+        foreground: "#111",
+        background: "#FFF",
+        size: "7",
+        value: "<?= $value ?>"
+    });
+    $(document).on("click","#qrcode",function(){
+        event.stopPropagation();
+    })
+</script>

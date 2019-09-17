@@ -1,0 +1,74 @@
+description = "Musicool Default Header"
+==
+<!-- <section id="header" class="mainpage hidden-xs" data-spy="affix" data-offset-top="81"> -->
+  <header id="header" class="mainpage hidden-xs" data-spy="affix" data-offset-top="81">
+    <div class="mainmenu">
+      <div class="container">
+      <!-- TOPNAV -->
+      <div class="row">
+        <div class="col-md-2 header-logo">
+          <img src="{{ 'assets/img/logo-musicool.png'|theme }}" class="logo img-responsive">
+          <img src="{{ 'assets/img/logo-musicool_w.png'|theme }}" class="logow img-responsive">
+        </div>
+        <div class="col-md-10 topnav header-nav clearfix">
+          <ul class="nav">
+            <li {% if this.page.id == 'homepage' %}class="active"{% endif %}><a href="{{ "homepage"|page }}">Home</a></li>
+            <li {% if this.page.id == 'aboutus' %}class="active"{% endif %}><a href="{{"aboutus"|page}}">About Us</a></li>
+            <li {% if this.page.id == 'product' %}class="active"{% endif %}><a href="{{"product"|page}}">Product</a></li>
+            <li {% if this.page.id == 'jaringan-kami' %}class="active"{% endif %}><a href="{{"jaringan-kami"|page}}">Jaringan Kami</a></li>
+            <li {% if this.page.id == 'blog' or this.page.id == 'post-page' %}class="active"{% endif %}><a href="{{"blog"|page}}">Blog</a></li>
+            <li {% if this.page.id == 'gallery' %}class="active"{% endif %}><a href="{{"gallery"|page}}">Galeri</a></li>
+            <li><a href="pesan.html">Pesan Sekarang</a></li>
+            <li {% if this.page.id == 'contact' %}class="active"{% endif %}><a href="{{"contact"|page}}">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ./TOPNAV -->
+      </div>
+
+    </div>
+  </header>
+  <!-- Mobile Menu -->
+  <header id="header-m" class="mainpage clearfix visible-xs" data-spy="affix" data-offset-top="81">
+    <nav class="navbar navbar-default navbar-mobile" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <div class="header-m">
+                  <img src="{{ 'assets/img/logo-musicool.png'|theme }}" class="logo img-responsive">
+                  <img src="{{ 'assets/img/logo-musicool_w.png'|theme }}" class="logow img-responsive">
+                </div>
+                <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar-offcanvas navbar-offcanvas-right" id="js-bootstrap-offcanvas">
+      <div class="clearfix topx">
+        <button type="button" class="btn-close navbar-toggle pull-right">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="la la-times-circle"></i>
+        </button>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="pesan.html">Pesan Sekarang</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobilemenu-logo">
+        <img src="{{ 'assets/img/logo-musicool.png'|theme }}" class="img-responsive">
+      </div>
+    </div>
+  </header>
+  <!-- ./Mobile Menu -->

@@ -1,0 +1,21 @@
+<div class="row mx-50">
+    <div class="col-sm-4">
+        <h4>My Location</h4>
+        {% for location in __SELF__.locations %}
+        <span class="d-block">{{ location.alamat }}</span>
+        <span class="d-block">{{ location.nama }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-sm-4">
+        <h4>My Emails</h4>
+        {% for email in __SELF__.emails %}
+        <span class="d-block">{{ email.email }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-sm-4">
+        <h4>My Numbers</h4>
+        {% for phone in __SELF__.phones %}
+        <span class="d-block">{{ phone.phone_number }}</span>
+        {% endfor %}
+    </div>
+</div>

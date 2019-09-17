@@ -1,0 +1,82 @@
+title = "Home"
+url = "/"
+layout = "layout"
+is_hidden = 0
+==
+<?php
+use Andev\Musicool\Models\Banner;
+use Andev\Musicool\Models\Info;
+use Andev\Musicool\Models\Feature;
+function onStart() {
+    $banners = Banner::orderBy('is_main','desc')->get();
+    $info = Info::first();
+    $feature = Feature::get();
+    $col_size = intdiv(12,$feature->count());
+    $this['banners'] = $banners;
+    $this['info'] = $info;
+    $this['features'] = $feature;
+    $this['col_size'] = $col_size;
+}
+?>
+==
+<a id="top"></a>
+  <section id="home-musicool">
+    <div id="mainslider" class="owl-carousel owl-theme">
+      {% for banner in banners %}
+       <div class="item" style="background-image: url('{{ banner.banner }}');">
+        <div class="slide-caption">
+          <h1 class="slogan">Hematnya Energi <br>Hijaunya Bumi</h1>
+          <img src="{{ 'assets/img/musicool.png'|theme }}" class="msc img-responsive">
+        </div>
+        <img src="{{ 'assets/img/healtheearth.png'|theme }}" class="heal img-responsive">
+        <img src="{{ 'assets/img/daun.png'|theme }}" class="dkn hidden-xs img-responsive">
+        <img src="{{ 'assets/img/daun.png'|theme }}" class="dkr img-responsive">
+      </div>
+      {% endfor %}
+      
+    </div>
+    <!-- <a class="arrow-prev noselect"></a>
+    <a class="arrow-next noselect"></a> -->
+  </section>
+  <section id="sekilas-musicool">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <img src="{{ 'assets/img/logo-musicool.png'|theme }}" class="img-responsive">
+          <h2>{{ info.tagline }}</h2>
+          {{ info.info|raw }}
+        </div>
+        <div class="col-sm-4">
+          <img src="{{ 'assets/img/musicool-hijau.png'|theme }}" class="tabung img-responsive">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="bg-grey">
+    <div class="container">
+      <h2>Kelebihan Musicool Refrigerant MC 22 dibandingkan dengan bahan pendingin Freon</h2>
+      <div class="row">
+        {% for feature in features %}
+        <div class="col-sm-{{ col_size }}">
+          <h4>{{ feature.title }}</h4>
+          {{ feature.description|raw }}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section id="values" class="bg-green">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="text-white">Musicool Has Many Core Values</h2>
+          <p class="text-white">Banyak perusahaan atau pemukiman yang hingga kini masih menggunakan bahan perusak alam, khususnya yang mengandung Bahan Perusak Ozon (BPO). Misalnya chlorofluorocarbons (CFCs) dan hydrochlorofluorocarbons (HCFCs) yang digunakan sebagai pendingin pada produk lemari es dan AC.</p>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+      </div>
+    </div>
+  </section>

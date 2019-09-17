@@ -1,0 +1,103 @@
+title = "Contact"
+url = "/contact"
+layout = "layout"
+is_hidden = 0
+
+[contact]
+==
+{{ message }}
+<a id="top"></a>
+<section id="title-page" class="bg-green" style="margin-top: 75px">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-white text-center">Contact Us</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6" style="position: relative">
+        <div class="lingkaran">
+
+        </div>
+        <h2>We are Happy To Hear From You</h2>
+      </div>
+      <div class="col-sm-6">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+      </div>
+    </div>
+    {% component 'contact' %}
+    <div class="row mx-50">
+      <form>
+        <div class="col-sm-6">
+          <div class="form-group" id="name-group">
+            <input type="text" name="name" class="form-control input-wrapper" placeholder="Your Name" required />
+            <span class="help-block" id="name-error"></span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group" id="email-group">
+            <input type="email" name="email" class="form-control input-wrapper" placeholder="Your Email" required />
+            <span class="help-block" id="email-error"></span>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group" id="subject-group">
+            <input type="text" name="subject" class="form-control input-wrapper" placeholder="Subject" required />
+            <span class="help-block" id="subject-error"></span>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group" id="message-group">
+            <textarea name="message" class="form-control input-wrapper" rows="4" placeholder="Message"
+              style="resize: none;" required></textarea>
+            <span class="help-block" id="message-error"></span>
+          </div>
+        </div>
+        <div class="col-sm-12" style="margin-top: 20px;">
+          <div class="form-group text-center">
+            <button type="button" onclick="sendEmail()" class="btn btn-success submit-btn">SUBMIT NOW</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{% put scripts %}
+<script>
+  function sendEmail() {
+    let formData = $("form").serializeArray();
+    $("form :input").prop("disabled", true);
+
+    $.ajax({
+      url: "/api/contact_us",
+      type: "POST",
+      data: formData,
+      success: function (response) {
+        $("form").trigger("reset");
+        $.oc.flashMsg({
+          'text': 'Thanks For Contacting Us!',
+          'class': 'success',
+          'interval': 3
+        })
+        $("form :input").prop("disabled", false);
+      },
+      error: function (error) {
+        formData.map(key => {
+          if (error.responseJSON.data[key.name]) {
+            $(`#${key.name}-group`).addClass("has-error");
+            $(`#${key.name}-error`).html(error.responseJSON.data[key.name][0]);
+          }
+        });
+        $("form :input").prop("disabled", false);
+      }
+    });
+  }
+
+</script>
+{% endput %}

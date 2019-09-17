@@ -1,0 +1,16 @@
+fields:
+    tagline:
+        label: Tagline
+        size: ''
+        span: full
+        type: textarea
+    info:
+        label: 'Sekilas Info'
+        span: full
+        size: large
+        type: richeditor
+    values:
+        label: 'Musicool''s Value'
+        span: full
+        size: small
+        type: richeditor

@@ -1,0 +1,58 @@
+fields:
+    nama:
+        label: Nama
+        span: auto
+        type: text
+    no_telp:
+        label: 'No. Telp'
+        span: auto
+        type: text
+    tipe_layanan:
+        label: 'Tipe Layanan'
+        span: auto
+        options:
+            - Agen
+            - Bengkel
+            - Teknisi
+        type: radio
+    kompetensi:
+        label: Kompetensi
+        options:
+            0: 'Non Teknisi'
+            B: Basic
+            I: Intermediet
+            K: Kompeten
+        showSearch: true
+        span: auto
+        type: dropdown
+    mor_id:
+        label: Wilayah
+        showSearch: true
+        span: auto
+        type: dropdown
+    provinsi_id:
+        label: Provinsi
+        showSearch: true
+        span: left
+        type: dropdown
+    kota_id:
+        label: Kota
+        showSearch: true
+        span: left
+        type: dropdown
+    kecamatan_id:
+        label: Kecamatan
+        showSearch: true
+        span: left
+        type: dropdown
+    alamat:
+        label: Alamat
+        size: small
+        span: full
+        type: textarea
+    maps:
+        label: 'Google Maps'
+        oc.commentPosition: ''
+        span: full
+        type: backendmaps
+      

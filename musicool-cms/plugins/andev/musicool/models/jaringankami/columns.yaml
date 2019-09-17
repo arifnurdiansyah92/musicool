@@ -1,0 +1,53 @@
+columns:
+    id:
+        label: id
+        type: text
+    nama:
+        label: nama
+        type: text
+    no_telp:
+        label: no_telp
+        type: text
+    alamat:
+        label: alamat
+        type: text
+    _mor:
+        label: Mor
+        type: number
+    _provinsi:
+        label: provinsi
+        type: text
+    _kota:
+        label: kota
+        type: text
+    _kecamatan:
+        label: kecamatan
+        type: text
+    
+    is_agen:
+        label: is agen
+        type: switch
+    is_bengkel:
+        label: is bengkel
+        type: switch
+    is_teknisi:
+        label: is teknisi
+        type: switch
+    kompetensi:
+        label: kompetensi
+        type: text
+    _location:
+        label: Location
+        type: partial
+        path: ~/plugins/andev/musicool/models/jaringankami/location/_location.htm
+    _qrcode:
+        label: QRCode
+        type: partial
+        path: ~/plugins/andev/musicool/models/jaringankami/qrcode/_qr_code.htm
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
+   

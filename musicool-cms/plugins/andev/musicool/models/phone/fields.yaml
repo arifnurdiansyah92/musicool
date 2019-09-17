@@ -1,0 +1,9 @@
+fields:
+    phone_number:
+        label: 'Phone Number'
+        span: full
+        type: text
+    is_main:
+        label: 'Is Main?'
+        span: auto
+        type: checkbox

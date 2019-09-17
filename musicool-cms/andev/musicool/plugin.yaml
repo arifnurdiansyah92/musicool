@@ -1,0 +1,6 @@
+plugin:
+    name: 'andev.musicool::lang.plugin.name'
+    description: 'andev.musicool::lang.plugin.description'
+    author: andev
+    icon: oc-icon-leaf
+    homepage: ''

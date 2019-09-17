@@ -1,0 +1,64 @@
+plugin:
+    name: 'andev.musicool::lang.plugin.name'
+    description: 'andev.musicool::lang.plugin.description'
+    author: andev
+    icon: oc-icon-leaf
+    homepage: ''
+navigation:
+    Musicool:
+        label: 'andev.musicool::lang.plugin.description'
+        url: andev/musicool/banner
+        icon: icon-leaf
+        sideMenu:
+            Banner:
+                label: Banner
+                url: andev/musicool/banner
+                icon: icon-image
+            Info:
+                label: 'Sekilas Info'
+                url: andev/musicool/info
+                icon: icon-info
+            About:
+                label: About
+                url: andev/musicool/about
+                icon: icon-user
+            Feature:
+                label: Feature
+                url: andev/musicool/feature
+                icon: icon-list
+            Gallery:
+                label: Gallery
+                url: andev/musicool/gallery
+                icon: icon-image
+            GalleryCategory:
+                label: 'Gallery Category'
+                url: andev/musicool/categorygallery
+                icon: icon-sitemap
+            Social-Media:
+                label: 'Social Media'
+                url: andev/musicool/contact
+                icon: icon-facebook
+            Phone:
+                label: Phone
+                url: andev/musicool/phone
+                icon: icon-phone
+            Email:
+                label: Email
+                url: andev/musicool/email
+                icon: icon-at
+            location:
+                label: Location
+                url: andev/musicool/location
+                icon: icon-map-marker
+            Subscriber:
+                label: Subscriber
+                url: andev/musicool/subscriber
+                icon: icon-group
+            EmailSetting:
+                label: 'Email Setting'
+                url: andev/musicool/emailsetting
+                icon: icon-wrench
+            JaringanKami:
+                label: 'Jaringan Kami'
+                url: andev/musicool/jaringankami
+                icon: icon-group

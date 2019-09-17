@@ -1,0 +1,628 @@
+.=====================================================================.
+                                                                       
+  .d8888b.   .o8888b.  db  .d8888b.  d8888b. d88888b d8888b.  .d888b.  
+ .8P    Y8. d8P    Y8  88 .8P    Y8. 88  `8D 88'     88  `8D .8P , Y8. 
+ 88      88 8P     .ooo88 88      88 88oooY' 88oooo  88oobY' 88  |  88 
+ 88      88 8b     `~~~88 88      88 88~~~b. 88~~~~  88`8b   88  |/ 88 
+ `8b    d8' Y8b    d8  88 `8b    d8' 88   8D 88.     88 `88. `8b | d8' 
+  `Y8888P'   `Y8888P'  YP  `Y8888P'  Y8888P' Y88888P 88   YD  `Y888P'  
+                                                                       
+`========================== INSTALLATION LOG ========================='
+
+[2019/08/26 04:39:16] Host: Windows NT DESKTOP-DRVG7AV 10.0 build 17134 (Windows 10) AMD64
+[2019/08/26 04:39:16] PHP version: 7.2.21
+[2019/08/26 04:39:16] Server software: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.21
+[2019/08/26 04:39:16] Operating system: WINNT
+[2019/08/26 04:39:16] Memory limit: 128M
+[2019/08/26 04:39:16] Max execution time: 3600
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:17] Postback payload: Array
+(
+    [code] => phpVersion
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:17] System check: phpVersion
+[2019/08/26 04:39:17] Requirement phpVersion +OK
+[2019/08/26 04:39:17] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:17] Postback payload: Array
+(
+    [code] => curlLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:17] System check: curlLibrary
+[2019/08/26 04:39:17] Requirement curlLibrary +OK
+[2019/08/26 04:39:17] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:18] Postback payload: Array
+(
+    [code] => liveConnection
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:18] System check: liveConnection
+[2019/08/26 04:39:18] Server request: ping
+[2019/08/26 04:39:18] Request information: Array
+(
+    [url] => http://gateway.octobercms.com/api/ping
+    [content_type] => application/json
+    [http_code] => 200
+    [header_size] => 477
+    [request_size] => 189
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.686527
+    [namelookup_time] => 0.214313
+    [connect_time] => 0.216144
+    [pretransfer_time] => 0.21626
+    [size_upload] => 50
+    [size_download] => 12
+    [speed_download] => 17
+    [speed_upload] => 72
+    [download_content_length] => -1
+    [upload_content_length] => 50
+    [starttransfer_time] => 0.686487
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 52.37.223.30
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 80
+    [local_ip] => 192.168.1.5
+    [local_port] => 64320
+)
+
+[2019/08/26 04:39:18] Requirement liveConnection +OK
+[2019/08/26 04:39:18] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:19] Postback payload: Array
+(
+    [code] => writePermission
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:19] System check: writePermission
+[2019/08/26 04:39:19] Requirement writePermission +OK
+[2019/08/26 04:39:19] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:19] Postback payload: Array
+(
+    [code] => pdoLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:19] System check: pdoLibrary
+[2019/08/26 04:39:19] Requirement pdoLibrary +OK
+[2019/08/26 04:39:19] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:20] Postback payload: Array
+(
+    [code] => mbstringLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:20] System check: mbstringLibrary
+[2019/08/26 04:39:20] Requirement mbstringLibrary +OK
+[2019/08/26 04:39:20] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:20] Postback payload: Array
+(
+    [code] => fileinfoLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:20] System check: fileinfoLibrary
+[2019/08/26 04:39:20] Requirement fileinfoLibrary +OK
+[2019/08/26 04:39:20] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:21] Postback payload: Array
+(
+    [code] => sslLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:21] System check: sslLibrary
+[2019/08/26 04:39:21] Requirement sslLibrary +OK
+[2019/08/26 04:39:21] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:22] Postback payload: Array
+(
+    [code] => zipLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:22] System check: zipLibrary
+[2019/08/26 04:39:22] Requirement zipLibrary +OK
+[2019/08/26 04:39:22] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:39:23] Postback payload: Array
+(
+    [code] => gdLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/08/26 04:39:23] System check: gdLibrary
+[2019/08/26 04:39:23] Requirement gdLibrary +OK
+[2019/08/26 04:39:23] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:40:37] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateDatabase
+)
+
+[2019/08/26 04:40:37] Handler error (onValidateDatabase): Database "musicool" is not empty. Please empty the database or specify another database.
+[2019/08/26 04:40:37] Trace log:
+#0 D:\xampp\htdocs\install-master\install_files\php\Installer.php(48): Installer->onValidateDatabase()
+#1 D:\xampp\htdocs\install-master\install_files\php\boot.php(91): Installer->__construct()
+#2 D:\xampp\htdocs\install-master\install.php(1): include('D:\\xampp\\htdocs...')
+#3 {main}
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:04] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateDatabase
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:04] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateAdminAccount
+)
+
+[2019/08/26 04:41:04] Handler error (onValidateAdminAccount): Please specify password
+[2019/08/26 04:41:04] Trace log:
+#0 D:\xampp\htdocs\install-master\install_files\php\Installer.php(48): Installer->onValidateAdminAccount()
+#1 D:\xampp\htdocs\install-master\install_files\php\boot.php(91): Installer->__construct()
+#2 D:\xampp\htdocs\install-master\install.php(1): include('D:\\xampp\\htdocs...')
+#3 {main}
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:22] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => admin
+    [admin_last_name] => 
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateDatabase
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:22] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => admin
+    [admin_last_name] => 
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateAdminAccount
+)
+
+[2019/08/26 04:41:22] Handler error (onValidateAdminAccount): Please specify the administrator last name
+[2019/08/26 04:41:22] Trace log:
+#0 D:\xampp\htdocs\install-master\install_files\php\Installer.php(48): Installer->onValidateAdminAccount()
+#1 D:\xampp\htdocs\install-master\install_files\php\boot.php(91): Installer->__construct()
+#2 D:\xampp\htdocs\install-master\install.php(1): include('D:\\xampp\\htdocs...')
+#3 {main}
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:50] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => admin
+    [admin_last_name] => aegis
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateDatabase
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:50] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => admin
+    [admin_last_name] => aegis
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateAdminAccount
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:50] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => admin
+    [admin_last_name] => aegis
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateAdvancedConfig
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:51] Postback payload: Array
+(
+    [step] => getMetaData
+    [meta] => 
+    [handler] => onInstallStep
+)
+
+[2019/08/26 04:41:51] Install step: getMetaData
+[2019/08/26 04:41:52] Server request: core/install
+[2019/08/26 04:41:52] Request information: Array
+(
+    [url] => http://gateway.octobercms.com/api/core/install
+    [content_type] => application/json
+    [http_code] => 200
+    [header_size] => 477
+    [request_size] => 197
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.906638
+    [namelookup_time] => 0.268777
+    [connect_time] => 0.270839
+    [pretransfer_time] => 0.270942
+    [size_upload] => 50
+    [size_download] => 132
+    [speed_download] => 145
+    [speed_upload] => 55
+    [download_content_length] => -1
+    [upload_content_length] => 50
+    [starttransfer_time] => 0.90656
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 54.68.25.146
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 80
+    [local_ip] => 192.168.1.5
+    [local_port] => 64355
+)
+
+[2019/08/26 04:41:52] Step getMetaData +OK
+[2019/08/26 04:41:52] Execute handler (onInstallStep): Array
+(
+    [result] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 6f6148a343581c3310b3b9ecde2d444a
+                    [build] => 455
+                    [uhash] => 530fb2559d6b264485c60ac3797fe8ac
+                )
+
+            [plugins] => Array
+                (
+                )
+
+            [themes] => Array
+                (
+                )
+
+        )
+
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:41:52] Postback payload: Array
+(
+    [step] => downloadCore
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 6f6148a343581c3310b3b9ecde2d444a
+                    [build] => 455
+                    [uhash] => 530fb2559d6b264485c60ac3797fe8ac
+                )
+
+        )
+
+    [handler] => onInstallStep
+)
+
+[2019/08/26 04:41:52] Install step: downloadCore
+[2019/08/26 04:42:07] Saving to file (core): D:/xampp/htdocs/install-master/install_files/temp/a74ad8dfacd4f985eb3977517615ce25.arc
+[2019/08/26 04:42:07] Step downloadCore +OK
+[2019/08/26 04:42:07] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:42:07] Postback payload: Array
+(
+    [step] => extractCore
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 6f6148a343581c3310b3b9ecde2d444a
+                    [build] => 455
+                    [uhash] => 530fb2559d6b264485c60ac3797fe8ac
+                )
+
+        )
+
+    [handler] => onInstallStep
+)
+
+[2019/08/26 04:42:07] Install step: extractCore
+[2019/08/26 04:42:07] Extracting file (core): a74ad8dfacd4f985eb3977517615ce25.arc
+[2019/08/26 04:43:15] Step extractCore +OK
+[2019/08/26 04:43:15] Execute handler (onInstallStep): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:43:16] Postback payload: Array
+(
+    [step] => setupConfig
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 6f6148a343581c3310b3b9ecde2d444a
+                    [build] => 455
+                    [uhash] => 530fb2559d6b264485c60ac3797fe8ac
+                )
+
+        )
+
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => admin
+    [admin_last_name] => aegis
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onInstallStep
+)
+
+[2019/08/26 04:43:16] Install step: setupConfig
+[2019/08/26 02:43:16] Step setupConfig +OK
+[2019/08/26 02:43:16] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:43:17] Postback payload: Array
+(
+    [step] => createAdmin
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 6f6148a343581c3310b3b9ecde2d444a
+                    [build] => 455
+                    [uhash] => 530fb2559d6b264485c60ac3797fe8ac
+                )
+
+        )
+
+    [db_type] => mysql
+    [db_host] => localhost
+    [db_port] => 
+    [db_name] => musicool
+    [db_user] => root
+    [db_pass] => *******
+    [admin_first_name] => admin
+    [admin_last_name] => aegis
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onInstallStep
+)
+
+[2019/08/26 04:43:17] Install step: createAdmin
+[2019/08/26 02:43:44] Step createAdmin +OK
+[2019/08/26 02:43:44] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:43:44] Postback payload: Array
+(
+    [disableLog] => 1
+)
+
+[2019/08/26 04:43:44] Install step: setupProject
+[2019/08/26 04:43:44] Step setupProject +OK
+[2019/08/26 04:43:44] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
+.============================ POST REQUEST ==========================.
+[2019/08/26 04:43:45] Postback payload: Array
+(
+    [step] => finishInstall
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 6f6148a343581c3310b3b9ecde2d444a
+                    [build] => 455
+                    [uhash] => 530fb2559d6b264485c60ac3797fe8ac
+                )
+
+        )
+
+    [hash] => 6f6148a343581c3310b3b9ecde2d444a
+    [build] => 455
+    [uhash] => 530fb2559d6b264485c60ac3797fe8ac
+    [handler] => onInstallStep
+)
+
+[2019/08/26 04:43:45] Install step: finishInstall
+[2019/08/26 02:43:45] Cleaning up file: a74ad8dfacd4f985eb3977517615ce25.arc
+[2019/08/26 02:43:45] Step finishInstall +OK
+[2019/08/26 02:43:45] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+

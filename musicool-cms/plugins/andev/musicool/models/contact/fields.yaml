@@ -1,0 +1,17 @@
+fields:
+    twitter:
+        label: Twitter
+        span: auto
+        type: text
+    facebook:
+        label: Facebook
+        span: auto
+        type: text
+    googleplus:
+        label: Google+
+        span: auto
+        type: text
+    linkedin:
+        label: Linkedin
+        span: auto
+        type: text

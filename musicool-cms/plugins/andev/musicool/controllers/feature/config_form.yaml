@@ -1,0 +1,10 @@
+name: Feature
+form: $/andev/musicool/models/feature/fields.yaml
+modelClass: Andev\Musicool\Models\Feature
+defaultRedirect: andev/musicool/feature
+create:
+    redirect: 'andev/musicool/feature/update/:id'
+    redirectClose: andev/musicool/feature
+update:
+    redirect: andev/musicool/feature
+    redirectClose: andev/musicool/feature

@@ -1,0 +1,40 @@
+title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "layout"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "aboutus"
+==
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the post title
+    if (isset($this->post))
+        $this->page->title = $this->post->title;
+}
+?>
+==
+<a id="top"></a>
+  <section id="title-page" class="bg-green" style="margin-top: 75px">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+        {% if post %}
+          <h2 class="text-white text-center">{{ post.title ?? "Not Found" }}</h2>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog-ls">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+        {% if post %}
+        {% component 'blogPost' %}
+        {% endif %}
+      </div>
+    </div>
+  </section>

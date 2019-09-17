@@ -1,0 +1,22 @@
+columns:
+    id:
+        label: id
+        type: text
+        searchable: true
+        invisible: true
+    _banner:
+        label: Banner
+        sortable: false
+        type: partial
+        path: ~/plugins/andev/musicool/models/banner/_banner_partial.htm
+    is_main:
+        label: 'Is Main?'
+        type: switch
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true

@@ -1,0 +1,5 @@
+fields:
+    name:
+        label: 'Nama Kategori'
+        span: auto
+        type: text

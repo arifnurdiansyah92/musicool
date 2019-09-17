@@ -1,0 +1,10 @@
+name: Email
+form: $/andev/musicool/models/email/fields.yaml
+modelClass: Andev\Musicool\Models\Email
+defaultRedirect: andev/musicool/email
+create:
+    redirect: 'andev/musicool/email/update/:id'
+    redirectClose: andev/musicool/email
+update:
+    redirect: andev/musicool/email
+    redirectClose: andev/musicool/email

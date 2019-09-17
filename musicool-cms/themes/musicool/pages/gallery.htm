@@ -1,0 +1,102 @@
+title = "Gallery"
+url = "/gallery"
+layout = "layout"
+is_hidden = 0
+==
+<?php
+use Andev\Musicool\Models\CategoryGallery;
+function onStart() {
+    $category = CategoryGallery::get();
+    $this['category']=$category;
+}
+?>
+==
+<a id="top"></a>
+<section id="title-page" class="bg-green" style="margin-top: 75px">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-white text-center">Gallery</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="gallery">
+    <div class="container">
+        <div class="flex-wrapper">
+            <div class="flex-item active" data-id="all">Show All</div>
+            {% for cat in category %}
+            <div class="flex-item" data-id="{{ cat.id }}">{{ cat.name }}</div>
+            {% endfor %}
+        </div>
+        <div id="image-list" class="row">
+        </div>
+        <div id="loading"class="text-center">
+            <img src="{{ asset('assets/img/loading.gif'|theme) }}" height="20px">
+            <img src="{{ asset('assets/img/DISCOVERMORE.png'|theme) }}">
+        </div>
+    </div>
+</section>
+{% put scripts %}
+<script>
+    let cat = "all";
+    let page = 1;
+    let total_page = 1;
+    let load_data;
+    function loadImage(page,cat="all"){
+        $.ajax({
+         url: "/api/gallery",
+         type:"get",
+         data:{
+           "page":page,
+           "category_id": cat== "all" ? "" : cat
+         },
+         success:function(response){
+            total_page = response.last_page;
+            let image = '';
+            response.data.map(value => {
+              image+=`
+              <div class="col-sm-4">
+                <a class="img-preview" href="${value.image_path}">
+                    <div class="square" style="background-image: url('${value.image_path}'); background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;"></div>
+                </a>
+            </div>`;
+            });
+            $("#image-list").append(image);
+            $("#loading").hide();
+            clearTimeout(load_data);
+         },
+         error: function(error){
+            alert("gagal load data");
+         }
+     })
+    }
+    loadImage(page);
+    $(document).on("click", ".flex-item", function () {
+        $(".flex-item").removeClass("active");
+        $(this).addClass("active");
+        cat = $(this).data("id");
+        page = 1;
+        $("#image-list").empty();
+        $("#loading").show();
+        loadImage(page,cat);
+    });
+    $('#image-list').magnificPopup({
+        delegate: '.img-preview',
+        type: 'image'
+    });
+    $(window).scroll(function() {
+       if($(window).scrollTop() + $(window).height() > $(document).height() - 150) {
+        if(page < total_page)
+            $("#loading").show();
+            load_data = setTimeout(() => {
+                 page++;
+                 loadImage(page)    
+            },1000);
+            
+        }
+    });
+</script>
+{% endput %}

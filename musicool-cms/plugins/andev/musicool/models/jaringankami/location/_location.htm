@@ -1,0 +1,26 @@
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyD2UVhsmHEKaUdYMVjLcl4A2rr3B1Zj9Oc&libraries=places"></script>
+<a id="show-gmaps" href="#" onclick="generateMap(`<?= $value['lat']  ?>`, `<?= $value['lng'] ?>`)" class="btn btn-primary" data-toggle="modal"
+    data-target="#gmaps">Location</a>
+
+<script>
+    var map;
+    function generateMap(lat, lng) {
+        lat = Number(lat);
+        lng = Number(lng);
+        map = new google.maps.Map(document.getElementById('location'), {
+            center: {
+                lat: lat,
+                lng: lng
+            },
+            zoom: 17
+        });
+        var marker = new google.maps.Marker({
+            position: {
+                lat: lat,
+                lng: lng
+            },
+            map: map,
+            title: 'Lokasi'
+        });
+    }
+</script>

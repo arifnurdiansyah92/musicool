@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    nama:
+        label: 'Nama Lokasi'
+        type: text
+    alamat:
+        label: Alamat
+        type: text

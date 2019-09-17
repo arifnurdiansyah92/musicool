@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: id
+        type: text
+        invisible: true
+    email:
+        label: Email
+        type: text
+    is_main:
+        label: 'Is Main?'
+        type: switch

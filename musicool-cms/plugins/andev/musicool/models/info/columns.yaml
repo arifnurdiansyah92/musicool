@@ -1,0 +1,24 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    tagline:
+        label: Tagline
+        type: text
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true
+    info:
+        label: 'Sekilas Info'
+        type: partial
+        path: ~/plugins/andev/musicool/models/info/_info.htm
+    values:
+        label: 'Musicool''s Value'
+        type: partial
+        path: ~/plugins/andev/musicool/models/info/_info.htm

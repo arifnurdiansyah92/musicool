@@ -1,0 +1,128 @@
+==
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MUSICOOL - {{ this.page.title }}</title>
+  
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/bootstrap.min.css'|theme }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/bootstrap.offcanvas.min.css'|theme }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/fonts/css/line-awesome.min.css'|theme }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/fonts/css/font-awesome.min.css'|theme }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/owl.carousel.min.css'|theme }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/owl.theme.default.min.css'|theme }}" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" /> -->
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/style.css'|theme }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/responsive.css'|theme }}" />
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="{{ 'assets/css/magnific-popup.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/blog.style.css'|theme }}">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+    <style>
+        .lingkaran {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            background-color: #009b4c;
+            border-radius: 50px;
+            z-index: -1;
+            top: -10px;
+            left: -10px
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        .mx-50 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .input-wrapper {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #f7f7f7;
+            border-radius: 0;
+            padding: 30px;
+            border: none;
+            box-shadow: none !important;
+            font-size: 15px;
+        }
+
+        .submit-btn {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #009B4D;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-color: transparent;
+            border-radius: 20px;
+
+        }
+
+        .flex-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .flex-item {
+            margin: 20px;
+            cursor: pointer;
+            color: #666666;
+            padding-bottom: 10px;
+        }
+
+        .flex-item.active {
+            border-bottom: 3px solid #009B4D;
+        }
+
+        .flex-item.active,
+        .flex-item:hover {
+            color: black !important;
+        }
+
+        .square:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+            margin: 20px;
+        }
+        #loading {
+            height: 75px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+  {% partial 'global/header' %}
+
+
+  {% page %}
+
+  {% partial 'global/footer' %}
+
+
+  <script src="{{ 'assets/js/jquery-1.11.2.min.js'|theme }}"></script>
+  <script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+  <script src="{{ 'assets/js/bootstrap.offcanvas.min.js'|theme }}"></script>
+  <script src="{{ 'assets/js/owl.carousel.min.js'|theme }}"></script>
+  <script src="{{ 'assets/js/jquery.matchHeight-min.js'|theme }}"></script>
+  <script src="{{ 'assets/js/home.js'|theme }}"></script>
+  <script src="{{ 'assets/js/main.js'|theme }}"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="{{ 'assets/js/magnific-popup.js'|theme }}"></script>
+  {% framework extras %}
+  {% scripts %}
+
+
+
+</body>
+</html>

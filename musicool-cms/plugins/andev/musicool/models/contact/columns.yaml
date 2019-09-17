@@ -1,0 +1,17 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    twitter:
+        label: Twitter
+        type: text
+    facebook:
+        label: Facebook
+        type: text
+    googleplus:
+        label: Google+
+        type: text
+    linkedin:
+        label: Linkedin
+        type: text

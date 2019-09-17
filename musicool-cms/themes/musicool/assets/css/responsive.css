@@ -1,0 +1,141 @@
+
+@media (min-width: 360px) {
+	#mainslider.owl-carousel .owl-item h1.slogan {
+		font-size: 39px;
+	}
+  #mainslider.owl-carousel .owl-item img.msc {
+		width: 189px;
+	}
+}
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 385px) {
+
+}
+
+@media (min-width: 400px) {
+
+}
+
+@media (min-width: 411px) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 768px) {
+  #mainslider.owl-carousel .item img.dkr {
+		position: absolute;
+		width: 350px;
+	}
+	#blog-ls .container .blist {
+    padding-right: 50px;
+	}
+}
+
+@media (min-width: 810px) {
+  
+}
+
+@media (min-width: 850px) {
+  
+}
+
+@media (min-width: 890px) {
+  
+}
+
+@media (min-width: 915px) {
+  
+}
+
+@media (min-width: 960px) {
+  
+}
+
+@media (min-width: 992px) {
+  
+}
+
+@media (min-width: 1024px) {
+	#mainslider.owl-carousel .item {
+		background-position: center top;
+		top: 25%;
+	}
+	#mainslider.owl-carousel .item .slide-caption {
+		text-align: left;
+		top: 20%;
+	}
+  #mainslider.owl-carousel .owl-item h1.slogan {
+		font-size: 79px;
+	}
+	#mainslider.owl-carousel .owl-item img.msc {
+		margin: initial;
+		width: 280px;
+	}
+	#about img.bv {
+		width: 75%;
+	}
+	#prod .prodimg {
+		width: 90%;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+  
+}
+
+@media (min-width: 1280px) {
+	.container .heading-sub-section p {
+    padding: 0 60px;
+	}
+	.container-fluid .heading-sub-section p {
+    padding: 0 75px;
+	}
+	#home {
+	  /*background: url("../img/bg0-home-Al-Qur'an_Kareem.png");*/
+	  background-size: cover;
+	}
+	#home .mockup-3d {
+    top: 34%;
+    left: 8%;
+	}
+	#home p {
+		width: 630px;
+    top: 220px;
+    right: 60px;
+    font-size: 26px;
+	}
+	#home p .surah {
+    font-size: 18px;
+	}
+	#home p .appinfo {
+    width: 430px;
+    margin-top: 4em;
+	}
+}
+
+@media (min-width: 1336px) {
+  #home p {
+  	width: 600px;
+	  top: 237px;
+	  right: 105px;
+	  font-size: 28px;
+  }
+  #home p .surah {
+    font-size: 20px;
+	}
+	#home p .appinfo {
+		margin-top: 6.7em;
+	}
+}
+
+@media (min-width: 1440px) {
+  
+}

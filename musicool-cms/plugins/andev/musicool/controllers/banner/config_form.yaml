@@ -1,0 +1,10 @@
+name: Banner
+form: $/andev/musicool/models/banner/fields.yaml
+modelClass: Andev\Musicool\Models\Banner
+defaultRedirect: andev/musicool/banner
+create:
+    redirect: 'andev/musicool/banner/update/:id'
+    redirectClose: andev/musicool/banner
+update:
+    redirect: andev/musicool/banner
+    redirectClose: andev/musicool/banner

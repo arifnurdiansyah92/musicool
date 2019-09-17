@@ -1,0 +1,10 @@
+name: Contact
+form: $/andev/musicool/models/contact/fields.yaml
+modelClass: Andev\Musicool\Models\Contact
+defaultRedirect: andev/musicool/contact
+create:
+    redirect: 'andev/musicool/contact/update/:id'
+    redirectClose: andev/musicool/contact
+update:
+    redirect: andev/musicool/contact
+    redirectClose: andev/musicool/contact

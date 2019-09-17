@@ -1,0 +1,10 @@
+name: Gallery
+form: $/andev/musicool/models/gallery/fields.yaml
+modelClass: Andev\Musicool\Models\Gallery
+defaultRedirect: andev/musicool/gallery
+create:
+    redirect: 'andev/musicool/gallery/update/:id'
+    redirectClose: andev/musicool/gallery
+update:
+    redirect: andev/musicool/gallery
+    redirectClose: andev/musicool/gallery

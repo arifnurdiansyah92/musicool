@@ -1,0 +1,10 @@
+name: CategoryGallery
+form: $/andev/musicool/models/categorygallery/fields.yaml
+modelClass: Andev\Musicool\Models\CategoryGallery
+defaultRedirect: andev/musicool/categorygallery
+create:
+    redirect: 'andev/musicool/categorygallery/update/:id'
+    redirectClose: andev/musicool/categorygallery
+update:
+    redirect: andev/musicool/categorygallery
+    redirectClose: andev/musicool/categorygallery

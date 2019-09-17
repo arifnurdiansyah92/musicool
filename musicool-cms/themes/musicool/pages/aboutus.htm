@@ -1,0 +1,29 @@
+title = "About Us"
+url = "/aboutus"
+layout = "layout"
+is_hidden = 0
+==
+<?php
+use Andev\Musicool\Models\About;
+function onStart() {
+    $about = About::first();
+    $this['about']=$about;
+}
+?>
+==
+<a id="top"></a>
+
+  <section id="about" class="page-top page-bottom">
+    <div class="container">
+      <h1>About Us</h1>
+
+      {{ about.about|raw }}
+
+      <h2>Brand Values</h2>
+
+      <img src="{{ asset('assets/img/brandvalues.png'|theme) }}" class="bv img-responsive">
+    
+    </div>
+
+    
+  </section>

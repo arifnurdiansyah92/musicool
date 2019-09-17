@@ -1,0 +1,12 @@
+list: $/andev/musicool/models/jaringankami/columns.yaml
+modelClass: Andev\Musicool\Models\JaringanKami
+title: JaringanKami
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'andev/musicool/jaringankami/update/:id'

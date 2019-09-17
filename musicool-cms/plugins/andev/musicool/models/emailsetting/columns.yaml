@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    sender_email:
+        label: 'Sender Email'
+        type: text
+    sender_password:
+        label: 'Sender Password'
+        type: text
+        invisible: true
+    forward_to:
+        label: 'Forward To'
+        type: text

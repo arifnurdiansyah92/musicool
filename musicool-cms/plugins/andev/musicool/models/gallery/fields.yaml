@@ -1,0 +1,15 @@
+fields:
+    image:
+        label: Image
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
+    category_gallery_id:
+        label: Category
+        span: auto
+        showSearch: true
+        type: dropdown

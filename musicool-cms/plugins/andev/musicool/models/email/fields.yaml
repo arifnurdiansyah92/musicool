@@ -1,0 +1,9 @@
+fields:
+    email:
+        label: Email
+        span: full
+        type: text
+    is_main:
+        label: 'Is Main?'
+        span: auto
+        type: checkbox
